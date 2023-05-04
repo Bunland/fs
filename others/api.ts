@@ -4,8 +4,8 @@ import { BunFS } from "../src/lib/bunFs";
 const fs = new BunFS();
 
 // Create DB
-// example
-//
+// example a
+// 
 
 type User = {
   id: number;
