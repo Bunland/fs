@@ -34,10 +34,4 @@ bun run index.ts
 [✓] Testing the "openFile" function > It should return a string if the file could be opened.\
 [✓] Testing the "removeFile" function > It should be able to delete a file
 
-## Testing the libray by creating a rest api using all its methods
-[✓]
-
-## Testing the libray by creating a Frontend
-[✓]
-
 This project was created using `bun init` in bun v0.5.9. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
