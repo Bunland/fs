@@ -8,7 +8,7 @@ bun run index.ts
 
 To build 
 ```bash 
- gcc fs.c -o fs.so -shared
+gcc fs.c -o fs.so -shared
 ```
 
 
