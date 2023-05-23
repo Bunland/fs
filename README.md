@@ -6,6 +6,12 @@ To run:
 bun run index.ts
 ```
 
+To build 
+```bash 
+ gcc fs.c -o fs.so -shared
+```
+
+
 ## THE FILE SYSTEM
 
 ## TODO LIST:
