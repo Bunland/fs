@@ -1,6 +1,4 @@
-// import { BunFS } from "./src/lib/fs";
-
-import { FS } from "./build/fs";
+import { FS } from "./src/lib/fs";
 
 const fs = new FS();
 fs.log("hello World");
