@@ -1,4 +1,4 @@
-import { BunFS } from "./src/lib/bunFs";
+import { BunFS } from "./src/lib/fs";
 
 const fs = new BunFS();
 fs.log("hello World");

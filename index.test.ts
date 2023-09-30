@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { BunFS } from "./src/lib/bunFs";
+import { BunFS } from "./src/lib/fs";
 
 const fs = new BunFS();
 
