@@ -1,6 +1,8 @@
-import { BunFS } from "./src/lib/fs";
+// import { BunFS } from "./src/lib/fs";
 
-const fs = new BunFS();
+import { FS } from "./build/fs";
+
+const fs = new FS();
 fs.log("hello World");
 await fs.writeFile("./example.txt", "hello world");
 fs.log(await fs.exists("./example.txt"));

@@ -2,7 +2,7 @@ import { ptr } from "bun:ffi";
 import { symbols } from "./ffi";
 import { encode, toString } from "./encoder";
 
-class BunFS {
+class FS {
   constructor() {}
 
   log(message: any) {
@@ -39,4 +39,4 @@ class BunFS {
   }
 }
 
-export { BunFS };
+export { FS };
