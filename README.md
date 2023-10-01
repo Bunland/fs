@@ -1,5 +1,10 @@
 # BumFs
 
+install 
+
+```typescript
+bun add @bunland/fs
+```
 
 ## Usage:
 
