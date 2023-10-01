@@ -1,6 +1,15 @@
 import { dlopen, suffix, FFIType } from "bun:ffi";
 
-const filename: string = `fs.${suffix}`;
+const { platform, arch } = process
+
+let filename: string
+
+if (platform === "linux" && arch === "x64") {
+  filename = `fs.${suffix}`
+} else {
+  filename = `fs.${suffix}`
+}
+
 const location: URL = new URL(filename, import.meta.url);
 
 const { symbols } = dlopen(location.pathname, {
