@@ -2,7 +2,7 @@
 
 Usage:
 
-```typescritpt
+```typescript
   import { FS } from "@bunland/fs";
   const fs = new FS();
   fs.log("hello World");
