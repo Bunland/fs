@@ -1,6 +1,6 @@
 # BumFs
 
-install 
+## install 
 
 ```typescript
 bun add @bunland/fs
