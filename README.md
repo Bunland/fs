@@ -4,7 +4,9 @@ Usage:
 
 ```typescript
   import { FS } from "@bunland/fs";
+
   const fs = new FS();
+
   fs.log("hello World");
   await fs.writeFile("./example.txt", "hello world");
   fs.log(await fs.exists("./example.txt"));
