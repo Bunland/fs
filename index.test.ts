@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test";
-import { BunFS } from "./src/lib/fs";
+import { FS } from "./src/lib/fs";
 
-const fs = new BunFS();
+const fs = new FS();
 
 describe(`Testing the "exits" function`, () => {
   test("It should return false if the file don't exists.", async () => {
