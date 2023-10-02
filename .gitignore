@@ -17,6 +17,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Runtime data
 others/
 build/
+some/
 
 pids
 _.pid

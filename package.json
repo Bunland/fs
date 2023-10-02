@@ -1,11 +1,24 @@
 {
-  "name": "bunfs",
-  "module": "index.ts",
+  "name": "@bunland/fs",
+  "main": "fs.js",
+  "version": "1.0.12",
+  "description": "bun filesystem",
   "type": "module",
+  "author": "vitalcode",
+  "keywords": ["fs", "filesystem", "bunfs"],
   "devDependencies": {
     "bun-types": "^0.5.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bunland/fs.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bunland/fs/issues"
+  },
+  "homepage": "https://github.com/Bunland/fs#readme"
 }
