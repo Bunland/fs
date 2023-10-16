@@ -27,7 +27,7 @@ const { symbols } = dlopen(location.pathname, {
     returns: FFIType.bool,
   },
 
-  openFile: {
+  readFile: {
     args: [FFIType.ptr],
     returns: FFIType.ptr,
   },

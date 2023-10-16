@@ -33,7 +33,7 @@ describe(`Testing the "exits" function`, () => {
 
 describe(`Testing the "openFile" function`, () => {
   test("It should return a string if the file could be opened", async () => {
-    expect(await fs.openFile("./example.txt")).toBe("Hello world from my test");
+    expect(await fs.readFile("./example.txt")).toBe("Hello world from my test");
   });
 });
 

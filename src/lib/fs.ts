@@ -34,8 +34,8 @@ class FS {
     throw new Error(`The file ${pathname} could not be deleted`);
   }
 
-  async openFile(pathname: string): Promise<string> {
-    return Promise.resolve(toString(symbols.openFile(ptr(encode(pathname)))));
+  async readFile(pathname: string): Promise<string> {
+    return Promise.resolve(toString(symbols.readFile(ptr(encode(pathname)))));
   }
 }
 

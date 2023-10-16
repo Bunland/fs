@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 // Define a fuunction calle "lg" that takes a string as an argument
 int lg(const char *message)
@@ -36,7 +38,7 @@ int exists(char *filename)
 }
 
 // Create a function that open a file
-char *openFile(char *filename)
+char *readFile(char *filename)
 {
     FILE *file = fopen(filename, "r");
 
@@ -57,6 +59,45 @@ char *openFile(char *filename)
 
     return buffer;
 }
+
+// Create a function that open a file
+// char* readFile(char* filename) {
+//   FILE* file;
+//   file = fopen(filename, "rb"); // "rb" for binary reading
+
+//   if (file == NULL) {
+//     perror("Error opening file");
+//     return NULL;
+//   }
+
+//   struct stat file_info;
+//   stat(filename, &file_info);
+
+//   size_t size_file = file_info.st_size;
+
+//   char* buffer = (char*)malloc(sizeof(char) * (size_file + 1)); // +1 for null-terminator
+
+//   if (buffer == NULL) {
+//     perror("Error allocating memory for buffer");
+//     fclose(file);
+//     return NULL;
+//   }
+
+//   fread(buffer, 1, size_file, file);
+//   buffer[size_file] = '\0'; // Null-terminate the string
+
+//   // Process the buffer to remove non-printable characters
+//   for (size_t i = 0; i < size_file; i++) {
+//     if (buffer[i] < ' ' && buffer[i] != '\t' && buffer[i] != '\n' && buffer[i] != '\r') {
+//       buffer[i] = ' '; // Replace non-printable characters with spaces
+//     }
+//   }
+
+//   fclose(file);
+
+//   return buffer;
+// }
+
 
 // Create a function that creates a file and can store content
 bool writeFile(char *filename, char *content)
