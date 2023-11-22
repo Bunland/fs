@@ -1,6 +1,6 @@
 {
   "name": "@bunland/fs",
-  "main": "fs.js",
+  "main": "index.ts",
   "version": "1.0.12",
   "description": "bun filesystem",
   "type": "module",
