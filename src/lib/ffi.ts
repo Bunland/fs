@@ -1,18 +1,11 @@
+import { fileURLToPath } from "bun";
 import { dlopen, suffix, FFIType } from "bun:ffi";
 
-const { platform, arch } = process;
+const filename: string = `fs.${suffix}`
 
-let filename: string;
+const pathname: string = fileURLToPath(new URL(filename, import.meta.url))
 
-if (platform === "linux" && arch === "x64") {
-  filename = `fs.${suffix}`;
-} else {
-  filename = `fs.${suffix}`;
-}
-
-const location: URL = new URL(filename, import.meta.url);
-
-const { symbols } = dlopen(location.pathname, {
+const { symbols } = dlopen(pathname, {
   lg: {
     args: [FFIType.ptr],
   },
